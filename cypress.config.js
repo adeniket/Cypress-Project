@@ -10,6 +10,6 @@ module.exports = defineConfig({
     retries:1,
   },
   env:{
-    baseURL: 'https://opensource-demo.orangehrmlive.com/web/index.php/auth'
+    OrangeHrmbaseURL: 'https://opensource-demo.orangehrmlive.com/web/index.php/auth'
   }
 });
