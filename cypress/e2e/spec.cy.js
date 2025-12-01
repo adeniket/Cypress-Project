@@ -1,10 +1,9 @@
 import loginPage from "../support/page/loginPage"
-import loginPage from "../support/page/loginPage"
 const cypress = require("cypress")
 describe('Login Module', () => {
   const loginPage = new loginPage;
   beforeEach(function(){
-        cy.visit(`${cypress.env('baseURL')}/login`)
+        cy.visit(`${cypress.env('OrangeHrmbaseURL')}/login`)
         cy.fixture('loginData').then(function(data){
           this.data= data;
         })
@@ -22,7 +21,7 @@ describe('Login Module', () => {
     // cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Admin')
     // cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type('admin123')
     // cy.get('.oxd-button').click()
-    loginPage.getDashboradPageLogo().should('exist');
+    loginPage.getDashboardPageLogo().should('exist');
     //cy.get('.oxd-brand-banner > img').should('exist')
   })
 })

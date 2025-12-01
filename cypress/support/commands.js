@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+// Add Custom command
+Cypress.Commands.add('getElementByCy', (locator, ...args)=>{
+    return cy.get(`[data-cy =${locator}], [data-test-id=${locator}]`, ...args)
+})
+
+Cypress.Commands.add('ClickElementByCy', (locator, ...args)=>{
+    return cy.getElementByCy(locator, ...args).click();
+})
+
+
+ 

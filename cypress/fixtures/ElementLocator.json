@@ -1,0 +1,30 @@
+
+    {
+        "QarenaPage":{
+            "testAutomationArenaLocator": "Test Automation Arena"
+        },
+        "TextautomationArenaPage":{
+            "TextAutomationHeadingsLocator" : "Master Test Automation with",
+            "atmSimulatorTextLocator" : "ATM Simulator",
+            "atmSimulatorLocator" : "arena-feature-title-3"
+        
+        },
+        "atmSimulatorPage":{
+            "atmsimulatortitleLocator": "SecureBank ATM",
+            "atmSimulationWelcomeLocator" : "Welcome to SecureBank"
+        },
+        "EnterPinPage":{
+            "pinHeadingLocator" : "SecureBank ATM",
+            "BacktoDashboardbtnLocator" : "Back to Dashboard",
+            "EnterFirstPinLocator" : "atm-key-1",
+            "EnterSecondPinLocator" : "atm-key-2",           
+            "EnterThirdPinLocator" : "atm-key-3",   
+            "EnterForthPinLocator" : "atm-key-4",
+            "EnterbtnLocator" : "atm-key-Enter"
+
+
+
+
+        }
+        
+    }
